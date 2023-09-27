@@ -12,7 +12,7 @@ const Edit = () => {
   const user = useSelector((state) => state.users);
 
   const currentUser = user.filter((c) => c.id === id);
-  const { uname, uemail, uaddress, uphone } = currentUser[0];
+  const { uname, uemail, uaddress, uphone } = currentUser;
 
   const [updatename, setUpdateName] = useState(uname);
   const [updateemail, setUpdateEmail] = useState(uemail);
